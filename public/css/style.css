@@ -1,0 +1,117 @@
+html{
+    height: 100%;
+}
+body{ 
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+}
+
+h1{
+    display: inline-flex;
+    text-align: center;
+    border: 5px;
+    color: #1f601f;
+}
+
+h4{
+    text-align: center;
+    border: 5px;
+    color: #1f601f;
+    font-size: 30px;
+}
+
+.heding{
+    margin: 0% auto;
+    height: 900px;
+    width: 900px;
+    border-radius: 50%;
+    border: 4px solid #339933;
+    z-index: 1;  
+    border-image-slice: 50 50;
+    /* padding: 25px; */
+}
+.heding2{
+    margin: 0% auto;
+    height: 780px;
+    width: 780px;
+    border-radius: 50%;
+    /* margin-top: auto 10px; */
+    z-index: 1;
+    
+}
+.bg-dar{
+    width: 100%;
+    /* height: 800px; */
+    color: #1f601f;
+    box-shadow: 0px 4px 15px #c4bfbf
+}
+.bottom-box{
+    border: 3px solid transparent;
+    box-shadow: 0px -188px 200px 275px #fff;
+}
+.wrap{
+    color: #339933;;
+}
+
+
+
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 30px;
+  color: #2E3D48;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+button{
+    align-items: center;
+    
+}
+
+#bg{
+    margin-top: 47px;
+    /* margin-bottom: 50px; */
+    width: 100vw;
+    height: 800px;
+    background:"url('../images/night.jpg')no-repeat center";
+    background-size: 400px 100%;
+    
+}
+#img-div{
+    box-shadow:1px 7px 33px 2px #1a1919;
+    width: 400px;
+    display: flex;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    margin: 1px auto;
+}
+.topDivs{
+    margin: 45px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+}
+
+.upperDivs{
+    margin-top: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#btn:hover{
+background-color: white;
+color: #1f601f;
+}

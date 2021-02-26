@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>headtag}}
+
+<body id="weather-bg-blue">
+
+    <div style="background-image:url('images/bg.png');background-repeat: repeat;background-size: 300px;z-index: 1;">
+        <div class="bg-dar" style="height: 752px;">
+
+            {{>navbar}}
+            <div id="img-div">
+                <div id="bg">
+                        <div class="container-fluid topDivs" style="margin-top: 40px;">
+                            <form id="form">
+                                <input id="cityName" class="form-control me-2" placeholder="Enter Your Cityname" aria-label="Search"
+                                    style="text-align: center;">
+                            </form>
+                            <button class="btn btn-success" id="btn" style="margin-left: 20px;">Check Now</button>
+                        </div>
+                    <div class="upperDivs">
+
+                        <div id="atmPress"class=" topDivs"><img src="images/cloud.svg" alt=""></div>
+                        <div id="windSpeed"class="windSpeed topDivs"><img src="images/wind.svg" alt=""></div>
+                        <div id="humidity"class=" topDivs"><img src="images/humidity.svg" alt=""></div>
+                    </div>
+                    <div class="topDivs" id="tempreture" style="margin: 30px auto;font-size:70px;">
+                    </div>
+                    <div class="topDivs" id="country" style="margin: 30px auto ;margin-bottom:10px;font-size:30px;"></div>
+                    <div class="topDivs" id="atmName" style="margin: 10px auto ;font-size:20px;"></div>
+                    <div class="topDivs" id="atmType" style="margin: 20px auto ;"><img src="images/maincloud.svg"
+                            style="height: 180px;width: 180px;" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
