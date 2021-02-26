@@ -24,7 +24,7 @@ else {
 // main scripts
 
 getTemp = async (e) => {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=fe5abb3404a48d0a053aafeaf621f308`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=fe5abb3404a48d0a053aafeaf621f308`;
     const data = await fetch(url)
     const responce = await data.json()
     const mainRes = [responce]
