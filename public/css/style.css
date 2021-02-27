@@ -6,7 +6,19 @@ body{
     flex-direction: column;
     /* height: 100%; */
 }
-
+@media screen and (max-width:700px){
+    .topDivs img{
+        height: 40px;
+        width: 40px;
+    }
+    #atmType{
+       height: 300px;
+       width: 300px;
+    }
+    #blackCurser{
+        display: none;
+    }
+}
 
 
 

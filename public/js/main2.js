@@ -7,6 +7,7 @@ var bottom_box = document.getElementById("bottom-box")
 var body = document.getElementById("body")
 var logo = document.getElementById("logo")
 const size = document.getElementsByClassName("size")
+const topDivs = document.getElementsByClassName("topDivs")
 
 function mediaFunc(med){
 if (med.matches) {
@@ -15,6 +16,7 @@ body.style.background="linear-gradient(rgb(225, 240, 250)50%,#fff)repeat-x"
 heding.style.border="none"
 heding.style.background="none"
 heding2.style.border="none"
+maindiv.style.marginTop="124px"
 maindiv.style.marginTop="124px"
 maindiv.style.border="2px solid green"
 maindiv.style.borderRadius="50%"
