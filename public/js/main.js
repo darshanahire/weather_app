@@ -9,17 +9,14 @@ if (med.matches) {
     bg_dar.style.display="contents" 
     bg_dar.style.height="100%" 
     bg_dar.style.width="800px" 
-    // bg.style.height = "100%"
-    // windSpeed.style.background = "black"
     bg_image.style.boxShadow = "none"
     bg_image.style.margin = "0 auto 100px"
-    // bg_image.style.margin = "0"
     bg_image.style.background = "none"
     bg_image.style.padding = "0"
     bg_image.style.width = "100%"
     bg_image.style.height = "100vh"
     bg_color.style.background="linear-gradient(rgb(109 184 233), rgb(255, 255, 255))repeat-x";
-    myform.style.margin = "30px auto 55px"
+    myform.style.margin = "150px auto 55px"
     windSpeed.style.margin = "5px -5px 46px 32px"
     bg.style.color = "black"
     
