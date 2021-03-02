@@ -153,4 +153,11 @@ button{
 #btn:hover{
 background-color: white;
 color: #1f601f;
+
 }
+#footer {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }

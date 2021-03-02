@@ -6,59 +6,66 @@
 <body id="body">
     {{>navbar}}
     <div id="bg">
-    <div id="weather-bg-blue" style="display: none;"></div>
-    <div id="design"
-        >
-        <div>
-            <div id="heding" class="heding"
-                style="background-image:linear-gradient(to bottom, rgb(225, 240, 250),#fff);z-index: -1;">
+        <div id="weather-bg-blue" style="display: none;"></div>
+        <div id="design">
+            <div>
+                <div id="heding" class="heding"
+                    style="background-image:linear-gradient(to bottom, rgb(225, 240, 250),#fff);z-index: -1;">
 
-                <div id="heding2" class="heding2" style="border: 4px solid #339933;margin: 50px;z-index: -1;">
-                    <div id="maindiv" style="margin: 120px auto;width:100%;text-align: center;z-index: 1;">
-                        <h1 id="h1">Welcome to Weather App</h1>
-                        <h4 style="margin: 70px 50px 30px;">Here You can Check </h4>
+                    <div id="heding2" class="heding2" style="border: 4px solid #339933;margin: 50px;z-index: -1;">
+                        <div id="maindiv" style="margin: 120px auto;width:100%;text-align: center;z-index: 1;">
+                            <h1 id="h1">Welcome to Weather App</h1>
+                            <h4 style="margin: 70px 50px 30px;">Here You can Check </h4>
 
-                        <h1>
-                            <a href="" class="typewrite" data-period="2000"
-                                data-type='[ "Tempreture..", "Atmospearic Pressure..", "Humidity..", "Wind Speed.." ]'
-                                style="text-decoration: none" ;></a>
-                            <span id="blackCurser" class="wrap blinking-cursor"><b>|</b></span>
-                        </h1>
-                        <div class="container-fluid my-5 w-50">
-                            <form class="d-flex mr-8" id="form">
-                                <input id="index_cityName" class="form-control me-2" type="search"
-                                    placeholder="Enter Your Cityname" aria-label="Search"
-                                    style="text-align: center;margin-right:10px;text-transform: uppercase;" autocomplete="off">
-                            </form>
+                            <h1>
+                                <a href="" class="typewrite" data-period="2000"
+                                    data-type='[ "Tempreture..", "Atmospearic Pressure..", "Humidity..", "Wind Speed.." ]'
+                                    style="text-decoration: none" ;></a>
+                                <span id="blackCurser" class="wrap blinking-cursor"><b>|</b></span>
+                            </h1>
+                            <div class="container-fluid my-5 w-50">
+                                <form class="d-flex mr-8" id="form">
+                                    <input id="index_cityName" class="form-control me-2" type="search"
+                                        placeholder="Enter Your Cityname" aria-label="Search"
+                                        style="text-align: center;margin-right:10px;text-transform: uppercase;"
+                                        autocomplete="off">
+                                </form>
+                            </div>
+                            <a id="btn" class="btn btn-success" id="index_btn"
+                                style="margin: -20px 200px 300px;width: 150px;">Check
+                                Now</a>
                         </div>
-                        <a id="btn" class="btn btn-success" id="index_btn"
-                            style="margin: -20px 200px 300px;width: 150px;">Check
-                            Now</a>
+
+
+
+
+
+
+
                     </div>
+                </div>
+                <div id="mobileview" style="margin: 120px auto;width:100%;height:373px;text-align: center;z-index: 1;">
+                    <h1 id="h1">Welcome to Weather App</h1>
+                    <h4 id="h4" style="margin: 70px 50px 30px;">Here You can Check </h4>
 
-
-
-
-
-
-
+                    <h1 class="upperDivs" style="margin: 20px 50px 30px;">
+                        <a href="" class="typewrite" data-period="2000"
+                            data-type='[ "Tempreture..", "Pressure..", "Humidity..", "Wind Speed.." ]'
+                            style="text-decoration: none" ;></a>
+                        <span id="blackCurser" class="wrap blinking-cursor"><b>|</b></span>
+                    </h1>
+                    <a class="btn btn-success" id="gobtn">Check
+                        Now</a>
+                             
+                    <div id="footer" class="upperDivs">
+                        <i class="fab fa-whatsapp fa-2x" style="width: 50px;height: 100px; color: black;"><a href=""></a></i>
+                        <i class="fab fa-instagram fa-2x" style="width: 50px;height: 100px; color: rgb(8, 8, 8);"><a href=""></a></i>
+                         <a class="fab fa-linkedin fa-2x" style="width: 50px;height: 100px; color: black;text-decoration: none;" href="https://www.linkedin.com/in/darshan-ahire-6b8a601b7/" target="__blank"></a>
+        <a class="fab fa-github fa-2x" style="width: 50px;height: 100px; color: black;text-decoration: none;" href="https://github.com/darshanahire" target="__blank"></a>
+                    </div>
                 </div>
             </div>
-            <div id="mobileview" style="margin: 120px auto;width:100%;height:373px;text-align: center;z-index: 1;">
-                <h1 id="h1">Welcome to Weather App</h1>
-                <h4 id="h4" style="margin: 70px 50px 30px;">Here You can Check </h4>
-
-                <h1 class="upperDivs" style="margin: 20px 50px 30px;">
-                    <a href="" class="typewrite" data-period="2000"
-                        data-type='[ "Tempreture..", "Pressure..", "Humidity..", "Wind Speed.." ]'
-                        style="text-decoration: none" ;></a>
-                    <span id="blackCurser" class="wrap blinking-cursor"><b>|</b></span>
-                </h1>
-                        <a class="btn btn-success" id="gobtn">Check
-                            Now</a>
-            </div>
         </div>
-    </div>
     </div>
     </div>
     <div id="bottom-box" class="bottom-box" ; style="width:100%;height: 100px; background: #fff ;z-index: -1">
@@ -72,8 +79,8 @@
     <div id="logo" class="upperDivs">
         <i class="fab fa-whatsapp fa-2x" style="width: 50px;height: 100px; color: black;"></i>
         <i class="fab fa-instagram fa-2x" style="width: 50px;height: 100px; color: rgb(8, 8, 8);"></i>
-        <i class="fab fa-youtube fa-2x" style="width: 50px;height: 100px; color: black;"></i>
-        <i class="fab fa-github fa-2x" style="width: 50px;height: 100px; color: black;"></i>
+        <a class="fab fa-linkedin fa-2x" style="width: 50px;height: 100px; color: black;text-decoration: none;" href="https://www.linkedin.com/in/darshan-ahire-6b8a601b7/" target="__blank"></a>
+        <a class="fab fa-github fa-2x" style="width: 50px;height: 100px; color: black;text-decoration: none;" href="https://github.com/darshanahire" target="__blank"></a>
     </div>
 
 </body>
@@ -143,8 +150,8 @@
 
     const gobtn = document.getElementById("gobtn")
     gobtn.addEventListener("click", () => {
-            window.location.href = "weather"
-        
+        window.location.href = "weather"
+
     })
 </script>
 

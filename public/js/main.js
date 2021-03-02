@@ -16,7 +16,7 @@ if (med.matches) {
     bg_image.style.width = "100%"
     bg_image.style.height = "100vh"
     bg_color.style.background="linear-gradient(rgb(109 184 233), rgb(255, 255, 255))repeat-x";
-    myform.style.margin = "150px auto 55px"
+    myform.style.margin = "100px auto 55px"
     windSpeed.style.margin = "5px -5px 46px 32px"
     bg.style.color = "black"
     
