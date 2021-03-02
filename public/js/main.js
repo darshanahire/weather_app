@@ -15,21 +15,36 @@ if (med.matches) {
     bg_image.style.padding = "0"
     bg_image.style.width = "100%"
     bg_image.style.height = "100vh"
-    bg_color.style.background="linear-gradient(rgb(109 184 233), rgb(255, 255, 255))repeat-x";
     myform.style.margin = "100px auto 55px"
     windSpeed.style.margin = "5px -5px 46px 32px"
     bg.style.color = "black"
-    
+    if(currTime >= 19 || currTime <= 6) {
+        bg_color.style.background = "linear-gradient(to bottom,rgb(17 16 16),#fff)repeat-x";
+    }
+    else{
+        bg_color.style.background="linear-gradient(rgb(109 184 233), rgb(255, 255, 255))repeat-x";
+
+    }
 }
 else {
     bg_dar.style.height="800px"
     bg_image.style.height = "747px"
-    bg_image.style.background = "url('../images/morning.jpg')no-repeat center";
-    bg_color.style.background = "linear-gradient(to bottom, rgb(210 230 243),#fff)repeat-x";
     myform.style.margin = "85px auto 30px"
     windSpeed.style.margin = "5px -5px 46px 32px"
     bg.style.color = "black"
     tempreture.style.margin = "-18px auto 50px"
+    if(currTime >= 19 || currTime <= 6) {
+        bg_image.style.background = "url('../images/night.jpg')no-repeat center";
+        bg_color.style.background = "linear-gradient(to bottom,rgb(17 16 16),#fff)repeat-x";
+
+        
+    }
+    else{
+        bg_image.style.background = "url('../images/morning.jpg')no-repeat center";
+        bg_color.style.background = "linear-gradient(to bottom, rgb(210 230 243),#fff)repeat-x";
+
+
+    }
 }}
 
 
@@ -42,20 +57,23 @@ var bg_color = document.getElementById("weather-bg-blue")
 
 const windSpeed = document.getElementById("windSpeed")
 const myform = document.getElementById("myform")
-
 const tempreture = document.getElementById("tempreture")
 
-if (currTime >= 19 || currTime <= 6) {
-    bg_image.style.background = "url('../images/night.jpg')no-repeat center";
-    bg.style.height = "706px"
-    bg_color.style.background = "linear-gradient(to bottom,#A0A0A0,#fff)";
+const media = window.matchMedia("(max-width:700px)")
+mediaFunction(media)
+media.addListener(mediaFunction)
+// if (currTime >= 19 || currTime <= 6) {
+
+    // bg_image.style.background = "url('../images/night.jpg')no-repeat center";
+    // bg.style.height = "706px"
+    // bg_color.style.background = "linear-gradient(to bottom,#A0A0A0,#fff)";
     // console.log("night mode");
-}
-else {
-    const media = window.matchMedia("(max-width:700px)")
-    mediaFunction(media)
-    media.addListener(mediaFunction)
-}
+// }
+// else {
+    // const media = window.matchMedia("(max-width:700px)")
+    // mediaFunction(media)
+    // media.addListener(mediaFunction)
+// }
 
 
 // main scripts
